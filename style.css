@@ -7,6 +7,22 @@ body{
     background-color: #414242;
     padding-left: 300px;
     padding-right: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+@media(min-width:500px){
+    body{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+@media(min-width: 500px) and (max-width: 1024px){
+    .main{
+        min-width: 300px;
+        min-height: 400px;
+    }
 }
 .main{
     background: linear-gradient(30deg, #48d46d,#57e6c9);
@@ -14,11 +30,11 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 400px;
     border: solid;
     border-radius: 25px;
     border-width: 2px;
     border-color: aqua;
+    text-align: center;
 }
 #submit{
     background-color: white;
